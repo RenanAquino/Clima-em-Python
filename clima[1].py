@@ -3,7 +3,7 @@ import json
 
 #Buscar informações
 cidade = str(input('Qual a cidade? ')).title()
-key = "a830c08c52313dc49d1efa86f97940ff"
+key = "Crie sua chave no site da OpenWeatherAPI"
 lingua = "pt_br"
 api = requests.get("https://api.openweathermap.org/data/2.5/weather?q={}&appid={}&lang={}&units=metric".format(cidade, key, lingua))
 api = api.json()
